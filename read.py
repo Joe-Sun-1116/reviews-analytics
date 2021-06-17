@@ -10,3 +10,7 @@ with open('053 reviews.txt' , 'r') as f:
 
 	print('Read finish')
 print('Average length :', length/len(data))
+
+inc_good = [d for d in data if 'good' in d]
+
+print('There are', len(inc_good), 'reviews contain "good".')
